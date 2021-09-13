@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.firstCol {
+	width: 100px !important;
+}
+.secondCol {
+	width: 50px !important;
+}
+@media screen and (min-width: 769px){
+	.yoyaku_table_wrap table {
+		table-layout:fixed;
+	}
+}
+.yoyaku_table_wrap table th {
+    border: solid 1px #DDD;
+    border-collapse: collapse;
+    padding: 5px 0;
+    text-align: center;
+}
+.yoyaku_table_wrap table th:nth-child(1) {
+	width: 100px;
+	min-width: 100px;
+}
+.yoyaku_table_wrap table th:nth-child(2) {
+	width: 50px;
+	min-width: 50px;
+}
+.yoyaku_table_wrap table td {
+    border: solid 1px #DDD;
+    border-collapse: collapse;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+.yoyaku_table_wrap table tr.real_count td {
+	background: #faf0e6;
+}
+.yoyaku_table_wrap table td.last_week {
+	background: #fae1c8;
+}
+.yoyaku_table_wrap table tr.real_count td.last_week {
+	background: #fac896;
+}
+.yoyaku_table_wrap table td.today {
+	background: #faaf64;
+}
+.yoyaku_table_wrap table tr.real_count td.today {
+	background: #fa8919;
+}
+.yoyaku_table_wrap table{
+    width:100%;
+}
+#shop_reserve h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-left: 5px solid #009245;
+    padding-left: 15px;
+}
+#shop_reserve h3{
+    text-align: left;
+}
+#shop_reserve .flexbox{
+	display: flex;
+}
+#shop_reserve .flexbox .title{
+    padding-top: 5px;
+	margin-right: 20px;
+}
+#shop_reserve .flexbox .btn_ma{
+    margin-top: 10px;
+}
+.bk_F7F7F7{
+    background: #F7F7F7;
+}
+.bk_fff{
+    background: #fff;
+}
+.w75p{
+	width:7.5%;
+}
+.shopBlock form .btn-basic {
+	margin-top: 0;
+}
+.bg-999999 {
+	background: #333 !important;
+}
+.bg-cccccc {
+	background: #CCC !important;
+}

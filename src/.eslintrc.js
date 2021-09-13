@@ -1,19 +1,24 @@
 module.exports = {
+  'globals': {
+    '$': false,
+  },
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false
+    parser: 'babel-eslint',
   },
   extends: [
     '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'prettier',
+    // 'prettier/vue',
+    'plugin:nuxt/recommended',
   ],
-  plugins: [
-  ],
+  plugins: [],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'camelcase': 'off',
+  },
 }

@@ -2,12 +2,18 @@ version: '3'
 services:
   nuxt-app:
     build:
-        context: .
-        dockerfile: "Dockerfile.dev"
+      context: .
+      dockerfile: 'Dockerfile.dev'
     working_dir: /src
     command: yarn run dev
     # ホストOSとコンテナ内でソースコードを共有する
     volumes:
       - ./src:/src
     ports:
-      - 5000:3000
+      - 3000:3000
+    networks:
+      - default
+      - shared-network
+networks:
+  shared-network:
+    external: true

@@ -1,0 +1,827 @@
+@charset "UTF-8";
+
+/*PC*/
+  @media screen and (min-width: 769px){
+    .rc-pcNone {
+      display: none !important;
+    }
+  }
+
+  /*
+  .rc-container {
+    overflow: hidden;
+  }
+  */
+
+  .rc-headerTop {
+    overflow: hidden;
+    height: auto;
+  }
+  .rc-headerTop > .rc-container {
+    padding: 5px 30px;
+  }
+  .rc-headerTop > .rc-container > .rc-container-in {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .rc-headerTop > .rc-container > .rc-container-in > .rc-container-left {
+    max-width: none;
+    width: auto;
+    flex: auto;
+    padding: 5px 15px;
+  }
+  .rc-headerTop > .rc-container > .rc-container-in > .rc-container-left h1 span.open {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    margin: 0;
+    vertical-align: middle;
+  }
+  .rc-headerTop > .rc-container > .rc-container-in > .rc-container-left h1 span.rc-h1-txt {
+    display: inline-block;
+    color: #009245;
+    margin: 0 12px 0 0;
+    padding: 0;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  .rc-headerTop > .rc-container > .rc-container-in > .rc-container-right {
+    overflow: hidden;
+    max-width: none;
+    width: auto;
+    flex: auto;
+    padding: 5px 15px;
+  }
+  .rc-headerTop > .rc-container > .rc-container-in > .rc-container-right > ul {
+    margin-top: -10px;
+  }
+  .rc-headerTop > .rc-container > .rc-container-in > .rc-container-right > ul li {
+    display: inline-block;
+    float: none;
+    margin-top: 10px;
+    vertical-align: top;
+  }
+
+  .rc-globalMenu {
+    height: auto;
+    padding: 0 30px;
+  }
+  .rc-globalMenu .rc-globalMenu-list {
+    display: table;
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-left: 1px solid #FFF;
+    font-weight: bold;
+  }
+  .rc-globalMenu .rc-globalMenu-list li {
+    display: table-cell;
+    float: none;
+    width: 16.666%;
+    height: auto;
+  }
+  .rc-globalMenu .rc-globalMenu-list li a {
+    display: block;
+    position: relative;
+    height: auto;
+  }
+  .rc-globalMenu .rc-globalMenu-list li a:before {
+    display: block;
+    position: absolute;
+    top: 36%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .rc-globalMenu  ul li.current a:before,
+  .rc-globalMenu .rc-globalMenu-list li a:hover:before {
+    width: 76px;
+    height: 76px;
+    top: 4%;
+  }
+
+  .rc-headerBottom {
+    height: auto;
+  }
+  .rc-headerBottom > .rc-container {
+    float: none;
+    max-width: 1460px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 0 30px;
+  }
+  .rc-headerBottom > .rc-container > .rc-container-in {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  .rc-headerBottom > .rc-container > .rc-container-in select {
+    width: 200px;
+  }
+  .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-right {
+  	/*
+    max-width: none;
+    width: auto;
+    */
+    flex: auto;
+    padding: 0 15px;
+    font-size: 12px;
+  }
+  .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-right li {
+    margin: 0;
+  }
+  .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-right li + li {
+    /* margin-left: 20px; */
+  }
+  .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-left {
+  	/*
+    max-width: none;
+    width: auto;
+    */
+    flex: auto;
+    padding: 0 15px !important;
+  }
+  .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-left p {
+    margin: 0;
+  }
+
+  .calendarBlock.rc-calendarBlock {
+    display: block;
+    overflow: hidden;
+    position: static;
+    top: auto;
+    left: auto;
+    max-width: 1460px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 30px 0;
+    text-align: right;
+    -ms-transform: translate(0);
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  .calendarBlock.rc-calendarBlock > .rc-calendar-left {
+    display: inline-block;
+    float: none;
+    margin-right: 20px;
+    vertical-align: bottom;
+  }
+  .calendarBlock.rc-calendarBlock > .rc-calendar-right {
+    display: inline-block;
+    float: none;
+    vertical-align: bottom;
+  }
+
+  .rc-main {
+    float: none;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .rc-main .rc-contentBlock .rc-calendar-box .rc-calendar-box-h {
+  }
+  .rc-main .rc-contentBlock .rc-calendar-box .rc-calendar-box-cont{
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .rc-main .rc-contentBlock .rc-calendar-box .rc-calendar-box-cont:-webkit-scrollbar {
+    height: 10px;
+  }
+  .rc-main .rc-contentBlock .rc-calendar-box .rc-calendar-box-cont:-webkit-scrollbar-track {
+    margin: 0 2px;
+    background: #ccc;
+    border-radius: 5px;
+  }
+  .rc-main .rc-contentBlock .rc-calendar-box .rc-calendar-box-cont:-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #666;
+  }
+  .rc-calendar-h-box {
+    margin-top: -10px;
+  }
+  .rc-calendar-h-txt {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    vertical-align: middle;
+  }
+  .rc-calendar-h-btn {
+    display: inline-block;
+    margin: 10px 0 0;
+    vertical-align: middle;
+  }
+
+/*tablet*/
+  @media screen and (max-width: 800px) {
+    .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-right ul {
+      float: none;
+      text-align: right;
+    }
+    .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-right li {
+      display: inline-block;
+      float: none;
+      font-size: 12px;
+    }
+    .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-right li span {
+      font-size: 20px;
+    }
+    .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-left p {
+      font-size: 12px;
+    }
+  }
+
+/*SP*/
+  @media screen and (max-width: 768px){
+    .rc-headerTop > .rc-container {
+      padding: 5px 10px 0;
+    }
+    .rc-headerTop > .rc-container > .rc-container-in {
+      margin: 0;
+    }
+    .rc-headerTop > .rc-container > .rc-container-in > .rc-container-left,
+    .rc-headerTop > .rc-container > .rc-container-in > .rc-container-right {
+      padding: 5px 0;
+    }
+    .rc-headerTop > .rc-container > .rc-container-in > .rc-container-left h1 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -moz-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+    }
+    .rc-headerTop > .rc-container > .rc-container-in > .rc-container-left h1 span.rc-h1-txt {
+      display: block;
+      padding-right: 10px;
+      font-size: 16px;
+      width: 80%;
+      text-align: left;
+    }
+    .rc-headerTop > .rc-container > .rc-container-in > .rc-container-left h1 span.open {
+      display: block;
+      margin: 0;
+      width: 20%;
+      font-size: 11px;
+    }
+
+    .rc-headerTop > .rc-container > .rc-container-in > .rc-container-right {
+      position: static;
+      background: #fff;
+      margin: 0 -10px;
+      padding: 10px 10px;
+      text-align: left;
+    }
+    .rc-headerTop > .rc-container > .rc-container-in > .rc-container-right > ul {
+      float: none;
+      text-align: left;
+    }
+    .rc-headerTop > .rc-container > .rc-container-in > .rc-container-right > ul li {
+      margin-right: 10px;
+      font-size: 11px;
+    }
+
+    .rc-globalMenu {
+      margin-top: 0;
+      padding: 0;
+    }
+    .rc-globalMenu-btn {
+      display: table;
+      position: relative;
+      width: 100%;
+      padding: 0 40px;
+      cursor: pointer;
+    }
+    .rc-globalMenu-btn span {
+      display: table-cell;
+      height: 60px;
+      padding: 10px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    .rc-globalMenu-icon {
+      position: absolute;
+      top: 50%;
+      width: 12px;
+      height: 10px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .rc-globalMenu-icon.icon-left {
+      left: 30px;
+    }
+    .rc-globalMenu-icon.icon-right {
+      right: 30px;
+    }
+    .rc-globalMenu-icon:before,
+    .rc-globalMenu-icon:after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 6px 0 6px;
+      border-color: #ffffff transparent transparent transparent;
+      content: '';
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: all .25s ease;
+      -moz-transition: all .25s ease;
+      -ms-transition: all .25s ease;
+      -o-transition: all .25s ease;
+      transition: all .25s ease;
+    }
+    .rc-globalMenu-icon:after {
+      opacity: 0;
+      margin-top: -2px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 6px 10px 6px;
+      border-color: transparent transparent #ffffff transparent;
+    }
+    .rc-globalMenu-op .rc-globalMenu-icon:before {
+      opacity: 0;
+    }
+    .rc-globalMenu-op .rc-globalMenu-icon:after {
+      opacity: 1;
+    }
+
+    .rc-globalMenu .rc-globalMenu-list {
+      display: none;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      border-left: none;
+    }
+    .rc-globalMenu .rc-globalMenu-list.rc-globalMenu-op {
+      display: block;
+    }
+    .rc-globalMenu .rc-globalMenu-list li {
+      display: table;
+      width: 100%;
+      padding: 0;
+      border-right: none;
+    }
+    .rc-globalMenu .rc-globalMenu-list li + li {
+      border-top: 1px solid #fff;
+    }
+    .rc-globalMenu .rc-globalMenu-list li a {
+      display: table-cell;
+      height: 60px;
+      padding: 10px 10px 10px 70px;
+      vertical-align: middle;
+      text-align: left;
+    }
+    .rc-globalMenu .rc-globalMenu-list li.current a,
+    .rc-globalMenu .rc-globalMenu-list li a:hover {
+      height: 60px;
+      padding: 10px 10px 10px 70px;
+    }
+    .rc-globalMenu .rc-globalMenu-list li a:before {
+      top: 50%;
+      left: 20px;
+      width: 30px;
+      height: 30px;
+      -ms-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+    .rc-globalMenu .rc-globalMenu-list li.current a:before, .rc-globalMenu .rc-globalMenu-list li a:hover:before {
+      width: 45px;
+      height: 45px;
+      top: 50%;
+      left: 12px;
+    }
+
+    .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-left {
+      overflow: hidden;
+      padding: 0 !important;
+    }
+    .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-right {
+      padding: 0;
+    }
+    .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-right ul {
+      text-align: left;
+    }
+    .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-right li {
+      margin-right: 20px;
+    }
+    .rc-headerBottom > .rc-container > .rc-container-in > .rc-container-right li + li {
+      margin-left: 0;
+    }
+    .rc-headerBottom > .rc-container {
+      padding: 10px;
+    }
+    .rc-headerBottom > .rc-container > .rc-container-in {
+      display: block;
+      margin: 0;
+    }
+
+    .calendarBlock.rc-calendarBlock {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -moz-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      width: auto;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+      -moz-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 30px 10px 0;
+    }
+    .calendarBlock.rc-calendarBlock > .rc-calendar-left {
+      display: block;
+      margin: 0;
+      padding: 0 15px;
+    }
+    .calendarBlock.rc-calendarBlock > .rc-calendar-right {
+      display: block;
+      margin: 0;
+      padding: 0 15px;
+    }
+    .calendarBlock.rc-calendarBlock > .rc-calendar-left .calendar-container,
+    .calendarBlock.rc-calendarBlock > .rc-calendar-right .calendar-container {
+      margin: 0 auto;
+    }
+
+    .rc-main {
+      padding: 0;
+    }
+    #formPosition.rc-container {
+      padding: 30px 10px;
+    }
+    .rc-main .rc-contentBlock {
+      padding: 15px;
+    }
+
+.rc-reserveVer {
+  padding: 45px 10px;
+}
+.rc-reserveVer-btn01 {
+  width: 100%;
+}
+.rc-reserveVer-btn01 button {
+  padding: 10px;
+}
+.rc-reserveVer-item {
+  display: block;
+  margin: 0;
+}
+.rc-reserveVer-item + .rc-reserveVer-item {
+  margin-top: 20px;
+}
+.rc-reserveVer-item > .col-2 {
+  max-width: none;
+  width: 100%;
+  flex: auto;
+  padding: 0;
+}
+.rc-reserveVer-item > .col-2 label {
+  display: block;
+  line-height: 1.4;
+}
+.rc-reserveVer-item > .col-10 {
+  max-width: none;
+  width: 100%;
+  flex: auto;
+  padding: 0;
+}
+.rc-reserveVer-item > .col-10 input,
+.rc-reserveVer-item > .col-10 textarea {
+  display: block;
+  width: 100% !important;
+}
+.rc-reserveVer .alert {
+  display: block;
+  margin: 5px 0 0;
+  padding: 0;
+}
+.rc-reserveVer .rc-reserveVer-submit button {
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+}
+.rc-reserveVer .rc-reserveVer-cancel {
+  margin: 0;
+}
+.rc-reserveVer .rc-reserveVer-cancel button {
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+}
+.rc-reserveVer .rc-reserveVer-date-list {
+  margin-top: -10px;
+}
+.rc-reserveVer .rc-reserveVer-date-item {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+}
+
+/*PC 20181201kozasa追加*/
+  @media screen and (min-width: 769px) {
+  	.rc-globalMenu .rc-globalMenu-list {
+  		width: 599px;
+  		margin: 0;
+  	}
+  	.rc-headerBottom > .rc-container {
+  		float: left;
+  		width: 650px;
+  	}
+  	.rc-headerBottom {
+  		height: 48px;
+  	}
+  }
+
+/*js調整 jquery.magnific-popup.min.js*/
+  .mfp-bg {
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1042 !important;
+    overflow: hidden !important;
+    position: fixed !important;
+    background: #0b0b0b;
+    opacity: 0.8;
+  }
+  .mfp-wrap {
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1043 !important;
+    position: fixed !important;
+    overflow: auto !important;
+    outline: none !important;
+    -webkit-backface-visibility: hidden;
+  }
+  .mfp-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    padding: 8px 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+/* 20190212 kozasa 追加 */
+.rc-calendarBlock {
+	width: 100%;
+}
+.rc-calendarBlock .rc-calendar-left {
+	width: 49%;
+	float: left;
+	margin: 0 2% 0 0;
+}
+.rc-calendarBlock .rc-calendar-right {
+	width: 49%;
+	float: left;
+	margin: 0;
+}
+.rc-calendarBlock table.calendar td {
+	max-width: 999px;
+	font-size: 3.8vw;
+}
+.rc-calendarBlock table.calendar td a {
+	padding: 0.45vw;
+}
+.calendarBlock.rc-calendarBlock {
+	width: 100%;
+}
+.rc-calendarBlock .calendar-container {
+	width: 100%;
+	font-size: 4vw;
+}
+main .rc-calendarBlock .calendar-container p {
+	font-size: 4vw;
+}
+.rc-calendarBlock table.nobd {
+	display: none;
+}
+.bl2 {
+	border-left: 3px solid #DDD;
+}
+.fukidashi dl {
+	font-weight: bold !important;
+	font-size: 14px;
+}
+.linemarker {
+	background: #FFFF00;
+}
+body.admin .white-popup {
+	max-width: 900px;
+}
+header .container-fluid ul li {
+	margin-right: 20px;
+}
+header .container-fluid button,
+header .container-fluid .btn-logout,
+header .container-fluid .btn-home {
+	margin-top: 10px;
+}
+body.admin .courseTable .need a {
+	color: #FF0000 !important;
+}
+body.admin .courseTable .blue a {
+	color: #0000FF !important;
+}
+body.admin .courseTable .normal a {
+	color: #333 !important;
+}
+.mr15 {
+	margin-right: 15px !important;
+}
+body.admin .contentInner .dayoff {
+	background: #CCCCCC;
+}
+.mb50 {
+	margin-bottom: 50px;
+}
+body.admin .col-10 {
+	position: relative;
+}
+body.admin .col-10 .inner {
+	position: absolute;
+	top: 35px;
+	left: 15px;
+	z-index: 10;
+}
+body.admin .col-10 .inner ul.client_list {
+	background: #FFF;
+	width: 250px;
+}
+body.admin .col-10 .inner ul.client_list li {
+	background: rgba(0, 146, 69, 0.1);
+	display: inline-block;
+	cursor: pointer;
+	width: 100%;
+	padding: 5px 10px;
+	border-bottom: 1px solid #FFF;
+}
+body.admin .col-10 .inner ul.client_list li:hover {
+	background: rgba(0, 146, 69, 0.3);
+}
+/* 20210212 追加 */
+.rc-help-area {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1002;
+  width: 270px;
+  height: 100%;
+  text-align: left;
+  transform: translateX(100%);
+  transition: transform 0.25s ease-in-out;
+}
+.rc-help-area.initialize {
+  opacity: 1;
+}
+.rc-help-area.open {
+  transform: translateX(0);
+}
+.rc-help-btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1002;
+  width: 65px;
+  height: 63px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px 0 0 10px;
+  background-color: rgba(0,0,0,0.6);
+  cursor: pointer;
+  transform: translate(-100%, -50%);
+  transition: all 0.25s ease-in-out;
+}
+.rc-help-btn:hover {
+  width: 75px;
+}
+.rc-help-btn-close,
+.rc-help-btn-open {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: opacity 0.25s linear;
+}
+.rc-help-btn-close {
+  opacity: 0;
+}
+.rc-help-area.open .rc-help-btn-close {
+  opacity: 1;
+}
+.rc-help-btn-close svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.rc-help-btn-close path {
+  stroke: #fff;
+}
+.rc-help-area.open .rc-help-btn-open {
+  opacity: 0;
+}
+.rc-help-btn-open svg {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto 3px;
+}
+.rc-help-btn-open path {
+  stroke: #fff;
+}
+.rc-help-txt {
+  display: block;
+  width: 35px;
+  font-weight: bold;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.rc-help-content {
+  overflow: auto;
+  height: 100%;
+  padding: 20px 15px;
+  background: rgba(255,255,255,0.95);
+  border-left: 2px solid #ebede6;
+}
+.rc-help-content-ttl {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3E3A39;
+  font-weight: bold;
+  font-size: 18px;
+}
+.rc-help-content-item + .rc-help-content-item {
+  margin-top: 25px;
+}
+.rc-help-content-item dt {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.rc-help-content-item dd {
+  font-size: 14px;
+}
